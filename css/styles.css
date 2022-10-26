@@ -1,17 +1,27 @@
-body {
-    font-family: "Roboto", Tahoma, sans-serif;
-    color: #212121;
-}
-
 :root {
+    --main-font: "Roboto",
+        Tahoma,
+        sans-serif;
+    --secondary-font: "Raleway", Verdana, sans-serif;
+    --font-size: 14px;
+    --letter-spacing: 0.03em;
     --text-color: #757575;
     --title-color: #212121;
     --active-color: #2196F3;
     --bg-color-main: #fff;
     --bg-color-hero: #2F303A;
     --bg-color-section: #F5F4FA;
-    --buttons-color:#F5F4FA;
+    --buttons-color: #F5F4FA;
 }
+
+body {
+    font-family: var(--main-font);
+    color: var(--title-color);
+    background-color: var(--bg-color-main);
+    font-size: var(--font-size);
+    letter-spacing: var(--letter-spacing);
+}
+
 
 .list {
     list-style: none;
@@ -27,16 +37,18 @@ button {
 
 /* ----------------------HEADER--------------------- */
 
+.current {
+    color: var(--active-color);
+}
+
 .header {
     background-color: var(--bg-color-main);
 }
 
 .logo {
-    font-family: 'Raleway';
-    font-weight: 700;
+    font-family: var(--secondary-font);
     font-size: 26px;
     line-height: calc(31/26);
-    letter-spacing: 0.03em;
     color: var(--active-color);
 }
 
@@ -50,7 +62,6 @@ button {
 
 .nav-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: inherit
@@ -66,7 +77,6 @@ button {
 
 .contact-link {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color)
@@ -95,7 +105,6 @@ h1 {
 .hero-button {
     background-color: var(--active-color);
     font-family: inherit;
-    font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
     display: flex;
@@ -127,30 +136,21 @@ h1 {
 .features-item {} */
 
 .features-title {
-    font-weight: 700;
-        font-size: 14px;
         line-height: calc(16/14);
-        letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--title-color)
 }
 
 .features-text {
-        font-size: 14px;
         line-height: calc(24/14);
-        letter-spacing: 0.03em;
         color: var(--text-color)
 }
 
 /* .job {} */
 
-.job-title {
-    font-weight: 700;
+.title {
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
 }
 
 /* .job-list {}
@@ -159,15 +159,6 @@ h1 {
 
 .team {
     background-color: var(--bg-color-section);
-}
-
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42/36);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
 }
 
 /* .team-list {} */
@@ -181,15 +172,12 @@ h1 {
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
 }
 
-.team-item-descr {
+.team-descr {
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--text-color);
 }
 
@@ -209,9 +197,7 @@ h1 {
 
 .address-city {
     font-style: normal;
-    font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
     color: var(--bg-color-main);
 }
 
@@ -222,9 +208,7 @@ h1 {
 
 .address-link {
     font-style: normal;
-    font-size: 14px;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -249,8 +233,6 @@ h1 {
         font-size: 16px;
         line-height: calc(26/16);
         text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--title-color);
 }
 
 .portfolio-button:hover, 
@@ -264,16 +246,13 @@ h1 {
 .portfolio-item {} */
 
 .portfolio-title {
-    font-weight: 700;
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
-    color: var(--title-color);
 }
 
 .portfolio-text {
     font-size: 16px;
         line-height: calc(30/16);
-        letter-spacing: 0.03em;
         color: var(--text-color);
 }
