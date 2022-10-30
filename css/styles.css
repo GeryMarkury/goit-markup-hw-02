@@ -37,9 +37,6 @@ button {
 
 /* ----------------------HEADER--------------------- */
 
-.current {
-    color: var(--active-color);
-}
 
 .header {
     background-color: var(--bg-color-main);
@@ -69,6 +66,10 @@ button {
 
 .nav-link:hover, .nav-link:focus {
     color: var(--active-color)
+}
+
+.current {
+    color: var(--active-color);
 }
 
 /* .contact-list {}
@@ -136,6 +137,7 @@ h1 {
 .features-item {} */
 
 .features-title {
+        font-size: 14px;
         line-height: calc(16/14);
         text-transform: uppercase;
 }
@@ -147,7 +149,7 @@ h1 {
 
 /* .job {} */
 
-.title {
+.section-title {
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
@@ -199,11 +201,6 @@ h1 {
     font-style: normal;
     line-height: calc(24/14);
     color: var(--bg-color-main);
-}
-
-.address-city:hover,
-.address-city:focus {
-    color: var(--active-color)
 }
 
 .address-link {
